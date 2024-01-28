@@ -1,0 +1,243 @@
+/*global style*/
+body{
+    background-color: #0D0D0D;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+/*genral classes*/
+.w-20{
+    width: 20%;
+}
+.w-80{
+    width: 80%;
+}
+.w-60{
+    width: 60%;
+}
+.w-48{
+    width: 48%;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+
+/*loader*/
+.loader-container{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0D0D0D;
+    z-index: 9999999;
+}
+.newloader-container{
+    top: 13.5%;
+    left: 0%;
+    right: 0;
+    bottom: 0;
+    background-color: #0D0D0D;
+    z-index: 9998;
+}
+.custom-loader {
+    top: 50%;
+    left: 50%;
+    --d:22px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    color: #766DF4;
+    box-shadow: 
+      calc(1*var(--d))      calc(0*var(--d))     0 0,
+      calc(0.707*var(--d))  calc(0.707*var(--d)) 0 1px,
+      calc(0*var(--d))      calc(1*var(--d))     0 2px,
+      calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 3px,
+      calc(-1*var(--d))     calc(0*var(--d))     0 4px,
+      calc(-0.707*var(--d)) calc(-0.707*var(--d))0 5px,
+      calc(0*var(--d))      calc(-1*var(--d))    0 6px;
+    animation: s7 1s infinite steps(8);
+  }
+  
+  @keyframes s7 {
+    100% {transform: rotate(1turn)}
+  }
+
+/*side bar*/
+.sidebar{
+    width: 320px;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    margin-left: calc(64px - 320px);
+    transition: all 0.5s;
+}
+
+.menu-links{
+    background-color: #0D0D0D;
+}
+.sidebar-links{
+    overflow: hidden;
+    height: 270px;
+}
+.sidebar-links .sidebar-link{
+    margin-bottom: 15px;
+    transition: all 0.5s;
+    position: absolute;
+    height: 50px;
+}
+.sidebar-links .sidebar-link a{
+    padding: 20px 0;
+}
+#s,#ca,#a,#i,#co{
+    top: 100%;
+}
+
+.sidebar-item{
+    color: white;
+    cursor: pointer;
+    
+}
+
+.happy-emoj-img{
+    width: 50px;
+    height: 50px;
+}
+
+
+/*search*/
+.search .form-control,.search .form-control:focus {
+    background-color: #0D0D0D;
+    color: white;
+}
+.search .form-control::placeholder {
+    color: gray;
+}
+
+.mael-card:hover{
+    .mael-card-layer{
+        top: 0;
+    }
+}
+.mael-card-layer{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    top: 100%;
+    transition: all 0.5s;
+}
+
+
+/*model*/
+.modle{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0D0D0D;
+    color: white;
+    z-index: 9998;
+}
+#modelRecipesList li{
+    background-color: #CFF4FC;
+    color: #055160;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#modelTagsList li{
+    background-color: #f8d7da;
+    color: #842029;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+#closeModelBtn{
+    top: 30px;
+    right: 40px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+#closeModelBtn:hover{
+    color: gray;
+}
+
+
+/*categories*/
+.category-card:hover{
+    .category-card-layer{
+        top: 0;
+    }
+}
+.category-card-layer{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    top: 100%;
+    transition: all 0.5s;
+}
+
+/*areas*/
+.fa-house-laptop{
+    font-size: 80px;
+}
+
+/*ingredients*/
+.fa-drumstick-bite{
+    font-size: 70px;
+}
+.ingredient-card {
+    height: 200px;
+}
+/*contact*/
+.contact .container{
+    width: 60%;
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .contact .container{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .contact .container{
+        width: 70%;
+    }
+    .contact .container form{
+        justify-content: center;
+    }
+    .contact .container form div{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .contact .container{
+        /* background-color: teal; */
+        width: 75%;
+    }
+    .contact .container form{
+        justify-content: center;
+        margin-left: 25px;
+    }
+    .contact .container form div{
+        width: 100%;
+    }
+}
+
+.contact .form-control{
+    height: 40px;
+}
+
+.wrong-input{
+    background-color: #F8D7DA;
+    color: #842029;
+}
