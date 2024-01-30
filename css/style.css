@@ -66,7 +66,16 @@ ul{
   @keyframes s7 {
     100% {transform: rotate(1turn)}
   }
-
+  @media screen and (max-width:767px) {
+    .newloader-container{
+        top: 29%;
+        left: 0%;
+        right: 0;
+        bottom: 0;
+        background-color: #0D0D0D;
+        z-index: 9998;
+    }
+}
 /*side bar*/
 .sidebar{
     width: 320px;
@@ -110,6 +119,9 @@ ul{
 
 
 /*search*/
+#searchForm form{
+    display: flex;
+}
 .search .form-control,.search .form-control:focus {
     background-color: #0D0D0D;
     color: white;
@@ -129,6 +141,19 @@ ul{
     background-color: rgba(255, 255, 255, 0.8);
     top: 100%;
     transition: all 0.5s;
+}
+
+@media screen and (max-width:767px) {
+    .search .container{
+        width: 95%;
+        margin-left: 25px;
+    }
+    #searchForm form{
+        display: block ;
+    }
+    #searchByName{
+        margin-bottom: 10px;
+    }
 }
 
 
@@ -169,7 +194,18 @@ ul{
     color: gray;
 }
 
-
+@media screen and (max-width:767px) {
+    .modle .container{
+        width: 85%;
+        margin-left: 60px;
+    }
+    #closeModelBtn{
+        top: 20px;
+        right: 15px;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+}
 /*categories*/
 .category-card:hover{
     .category-card-layer{
@@ -184,9 +220,21 @@ ul{
     transition: all 0.5s;
 }
 
+@media screen and (max-width:767px) {
+    .categories .container{
+        width: 85%;
+        margin-left: 60px;
+    }
+}
 /*areas*/
 .fa-house-laptop{
     font-size: 80px;
+}
+@media screen and (max-width:767px) {
+    .areas .container{
+        width: 85%;
+        margin-left: 60px;
+    }
 }
 
 /*ingredients*/
@@ -195,6 +243,12 @@ ul{
 }
 .ingredient-card {
     height: 200px;
+}
+@media screen and (max-width:767px) {
+    .ingredients .container{
+        width: 80%;
+        margin-left: 65px;
+    }
 }
 /*contact*/
 .contact .container{

@@ -532,7 +532,7 @@ async function getMealById(id){
 function showMealDetails(meal){
     let container = 
     `
-    <i id="closeModelBtn" class="fa-solid fa-xmark position-absolute"></i>
+    <i id="closeModelBtn" class="fa-solid fa-xmark position-absolute fs-4"></i>
     <div class="container mt-5">
         <div class="row gy-4">
             <div class="col-md-4">
@@ -552,97 +552,97 @@ function showMealDetails(meal){
                         
                         
                         <li ${meal.strMeasure1==null&& meal.strIngredient1==null ?`class="d-none"`:
-                            meal.strMeasure1!=""&& meal.strIngredient1!="" ?`class="20"`:
+                            meal.strMeasure1!=""&& meal.strIngredient1!="" ?`class="1"`:
                             `class="d-none"` }>
                             ${meal.strMeasure1} ${meal.strIngredient1}
                         </li>
                         <li ${meal.strMeasure2==null&& meal.strIngredient2==null ?`class="d-none"`:
-                            meal.strMeasure2!=""&& meal.strIngredient2!="" ?`class="20"`:
+                            meal.strMeasure2!=""&& meal.strIngredient2!="" ?`class="2"`:
                             `class="d-none"` }>
                             ${meal.strMeasure2} ${meal.strIngredient2}
                         </li>
                         <li ${meal.strMeasure3==null&& meal.strIngredient3==null ?`class="d-none"`:
-                            meal.strMeasure3!=""&& meal.strIngredient3!="" ?`class="20"`:
+                            meal.strMeasure3!=""&& meal.strIngredient3!="" ?`class="3"`:
                             `class="d-none"` }>
                             ${meal.strMeasure3} ${meal.strIngredient3}
                         </li>
                         <li ${meal.strMeasure4==null&& meal.strIngredient4==null ?`class="d-none"`:
-                            meal.strMeasure4!=""&& meal.strIngredient4!="" ?`class="20"`:
+                            meal.strMeasure4!=""&& meal.strIngredient4!="" ?`class="4"`:
                             `class="d-none"` }>
                             ${meal.strMeasure4} ${meal.strIngredient4}
                         </li>
                         <li ${meal.strMeasure5==null&& meal.strIngredient5==null ?`class="d-none"`:
-                            meal.strMeasure5!=""&& meal.strIngredient5!="" ?`class="20"`:
+                            meal.strMeasure5!=""&& meal.strIngredient5!="" ?`class="5"`:
                             `class="d-none"` }>
                             ${meal.strMeasure5} ${meal.strIngredient5}
                         </li>
                         <li ${meal.strMeasure6==null&& meal.strIngredient6==null ?`class="d-none"`:
-                            meal.strMeasure6!=""&& meal.strIngredient6!="" ?`class="20"`:
+                            meal.strMeasure6!=""&& meal.strIngredient6!="" ?`class="6"`:
                             `class="d-none"` }>
                             ${meal.strMeasure6} ${meal.strIngredient6}
                         </li>
                         <li ${meal.strMeasure7==null&& meal.strIngredient7==null ?`class="d-none"`:
-                            meal.strMeasure7!=""&& meal.strIngredient7!="" ?`class="20"`:
+                            meal.strMeasure7!=""&& meal.strIngredient7!="" ?`class="7"`:
                             `class="d-none"` }>
                             ${meal.strMeasure7} ${meal.strIngredient7}
                         </li>
                         <li ${meal.strMeasure8==null&& meal.strIngredient8==null ?`class="d-none"`:
-                            meal.strMeasure8!=""&& meal.strIngredient8!="" ?`class="20"`:
+                            meal.strMeasure8!=""&& meal.strIngredient8!="" ?`class="8"`:
                             `class="d-none"` }>
                             ${meal.strMeasure8} ${meal.strIngredient8}
                         </li>
                         <li ${meal.strMeasure9==null&& meal.strIngredient9==null ?`class="d-none"`:
-                            meal.strMeasure9!=""&& meal.strIngredient9!="" ?`class="20"`:
+                            meal.strMeasure9!=""&& meal.strIngredient9!="" ?`class="9"`:
                             `class="d-none"` }>
                             ${meal.strMeasure9} ${meal.strIngredient9}
                         </li>
                         <li ${meal.strMeasure10==null&& meal.strIngredient10==null ?`class="d-none"`:
-                            meal.strMeasure10!=""&& meal.strIngredient10!="" ?`class="20"`:
+                            meal.strMeasure10!=""&& meal.strIngredient10!="" ?`class="10"`:
                             `class="d-none"` }>
                             ${meal.strMeasure10} ${meal.strIngredient10}
                         </li>
                         <li ${meal.strMeasure11==null&& meal.strIngredient11==null ?`class="d-none"`:
-                            meal.strMeasure11!=""&& meal.strIngredient11!="" ?`class="20"`:
+                            meal.strMeasure11!=""&& meal.strIngredient11!="" ?`class="11"`:
                             `class="d-none"` }>
                             ${meal.strMeasure11} ${meal.strIngredient11}
                         </li>
                         <li ${meal.strMeasure12==null&& meal.strIngredient12==null ?`class="d-none"`:
-                            meal.strMeasure12!=""&& meal.strIngredient12!="" ?`class="20"`:
+                            meal.strMeasure12!=""&& meal.strIngredient12!="" ?`class="12"`:
                             `class="d-none"` }>
                             ${meal.strMeasure12} ${meal.strIngredient12}
                         </li>
                         <li ${meal.strMeasure13==null&& meal.strIngredient13==null ?`class="d-none"`:
-                            meal.strMeasure13!=""&& meal.strIngredient13!="" ?`class="20"`:
+                            meal.strMeasure13!=""&& meal.strIngredient13!="" ?`class="13"`:
                             `class="d-none"` }>
                             ${meal.strMeasure13} ${meal.strIngredient13}
                         </li>
                         <li ${meal.strMeasure14==null&& meal.strIngredient14==null ?`class="d-none"`:
-                            meal.strMeasure14!=""&& meal.strIngredient14!="" ?`class="20"`:
+                            meal.strMeasure14!=""&& meal.strIngredient14!="" ?`class="14"`:
                             `class="d-none"` }>
                             ${meal.strMeasure14} ${meal.strIngredient14}
                         </li>
                         <li ${meal.strMeasure15==null&& meal.strIngredient15==null ?`class="d-none"`:
-                            meal.strMeasure15!=""&& meal.strIngredient15!="" ?`class="20"`:
+                            meal.strMeasure15!=""&& meal.strIngredient15!="" ?`class="15"`:
                             `class="d-none"` }>
                             ${meal.strMeasure15} ${meal.strIngredient15}
                         </li>
                         <li ${meal.strMeasure16==null&& meal.strIngredient16==null ?`class="d-none"`:
-                            meal.strMeasure16!=""&& meal.strIngredient16!="" ?`class="20"`:
+                            meal.strMeasure16!=""&& meal.strIngredient16!="" ?`class="16"`:
                             `class="d-none"` }>
                             ${meal.strMeasure16} ${meal.strIngredient16}
                         </li>
                         <li ${meal.strMeasure17==null&& meal.strIngredient17==null ?`class="d-none"`:
-                            meal.strMeasure17!=""&& meal.strIngredient17!="" ?`class="20"`:
+                            meal.strMeasure17!=""&& meal.strIngredient17!="" ?`class="17"`:
                             `class="d-none"` }>
                             ${meal.strMeasure17} ${meal.strIngredient17}
                         </li>
                         <li ${meal.strMeasure18==null&& meal.strIngredient18==null ?`class="d-none"`:
-                            meal.strMeasure18!=""&& meal.strIngredient18!="" ?`class="20"`:
+                            meal.strMeasure18!=""&& meal.strIngredient18!="" ?`class="18"`:
                             `class="d-none"` }>
                             ${meal.strMeasure18} ${meal.strIngredient18}
                         </li>
                         <li ${meal.strMeasure19==null&& meal.strIngredient19==null ?`class="d-none"`:
-                            meal.strMeasure19!=""&& meal.strIngredient19!="" ?`class="20"`:
+                            meal.strMeasure19!=""&& meal.strIngredient19!="" ?`class="19"`:
                             `class="d-none"` }>
                             ${meal.strMeasure19} ${meal.strIngredient19}
                         </li>
