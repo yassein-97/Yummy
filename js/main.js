@@ -177,7 +177,7 @@ function showCategories(categoriesList){
                     <img src="${categoriesList[i].strCategoryThumb}" class="w-100 " alt="${categoriesList[i].strCategory}">
                     <div class="category-card-layer position-absolute text-center p-2">
                         <h3 class="category-card-h3">${categoriesList[i].strCategory}</h3>
-                        <p class="p-2 text-center lh-lg">${categoriesList[i].strCategoryDescription}</p>
+                        <p class="p-2 text-center">${(categoriesList[i].strCategoryDescription).split(' ').splice(0,20).join(' ')}</p>
                     </div>
                 </div>
             </div>
